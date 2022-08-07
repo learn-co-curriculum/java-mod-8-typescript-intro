@@ -105,7 +105,7 @@ And you should see output that indicates how to use this command.
 
 Now create a very simple file named `app.ts` with the following content:
 
-```TypeScript
+```typescript
 console.log("Hello World");
 ```
 
@@ -143,7 +143,7 @@ console.log(add("10", "20"));
 
 Let's re-implement this functionality in TypeScript:
 
-```TypeScript
+```typescript
 function add(firstNumber: number, secondNumber: number) {
    return firstNumber + secondNumber;
 }
@@ -161,7 +161,7 @@ this added advantage: the compiler can actually tell us about a type issue prior
 to us running the code anywhere. Run the command to compile `add.ts` and you
 will get the following error:
 
-```TypeScript
+```typescript
 ➜  tsc add.ts
 add.ts:5:17 - error TS2345: Argument of type 'string' is not assignable to parameter of type 'number'.
 
